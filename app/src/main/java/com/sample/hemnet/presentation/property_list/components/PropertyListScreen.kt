@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.sample.hemnet.domain.model.PropertyType
 import com.sample.hemnet.presentation.property_list.PropertyListViewModel
-import com.sample.hemnet.presentation.property_list.components.loading_shimmer.LoadingRecipeListShimmer
+import com.sample.hemnet.presentation.property_list.components.loading_shimmer.LoadingPropertyListShimmer
 
 const val IMAGE_HEIGHT = 200
 
@@ -54,7 +54,7 @@ fun PropertyListScreen(
             )
         }
         if (state.isLoading) {
-            LoadingRecipeListShimmer(imageHeight = IMAGE_HEIGHT.dp)
+            LoadingPropertyListShimmer(imageHeight = IMAGE_HEIGHT.dp)
         }
     }
 }

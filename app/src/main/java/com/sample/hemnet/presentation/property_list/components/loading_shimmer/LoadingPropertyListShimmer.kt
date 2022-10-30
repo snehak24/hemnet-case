@@ -11,9 +11,10 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.Dp
 import com.sample.hemnet.common.LocalSpacing
 
-
+const val ANIMATION_DURATION = 1300
+const val ANIMATION_START_DELAY = 300
 @Composable
-fun LoadingRecipeListShimmer(
+fun LoadingPropertyListShimmer(
     imageHeight: Dp,
     modifier: Modifier = Modifier
 ) {
@@ -33,9 +34,9 @@ fun LoadingRecipeListShimmer(
             targetValue = (cardWidthPx + gradientWidth),
             animationSpec = infiniteRepeatable(
                 animation = tween(
-                    durationMillis = 1300,
+                    durationMillis = ANIMATION_DURATION,
                     easing = LinearEasing,
-                    delayMillis = 300
+                    delayMillis = ANIMATION_START_DELAY
                 ),
                 repeatMode = RepeatMode.Restart
             )
@@ -45,9 +46,9 @@ fun LoadingRecipeListShimmer(
             targetValue = (cardHeightPx + gradientWidth),
             animationSpec = infiniteRepeatable(
                 animation = tween(
-                    durationMillis = 1300,
+                    durationMillis = ANIMATION_DURATION,
                     easing = LinearEasing,
-                    delayMillis = 300
+                    delayMillis = ANIMATION_START_DELAY
                 ),
                 repeatMode = RepeatMode.Restart
             )

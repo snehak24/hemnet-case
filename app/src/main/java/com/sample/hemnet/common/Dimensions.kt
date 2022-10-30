@@ -4,6 +4,9 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+/**
+ * Data class that can be accessed like context is accessed in composables.
+ */
 data class Dimensions(
     val default: Dp = 0.dp,
     val tinySpace: Dp = 2.dp,
