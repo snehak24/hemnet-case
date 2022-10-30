@@ -1,5 +1,4 @@
-#Hemnet-Case
-It contains rendering properties list and the data for the app is mocked locally using postman mock-server.   
+Hemnet-Case application contains rendering properties list and the data for the app is mocked locally using postman mock-server.   
 The application is built using clean-architecture with the UI built using Jetpack compose. 
 
 Features:
