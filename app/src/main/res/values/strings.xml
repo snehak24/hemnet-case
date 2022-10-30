@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hemnet</string>
+    <string name="search_place">Sök bostad</string>
+    <string name="living_area_info">%d m²</string>
+    <string name="property_room_info">%d rum</string>
+    <string name="property_on_hemnet_info">%d dagar</string>
+    <string name="area">Område</string>
+    <string name="property_rating">Betyg: %s</string>
+    <string name="property_average_price">Snittpris: %s</string>
+</resources>
